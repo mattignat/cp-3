@@ -8,7 +8,6 @@ export default function Counter() {
 
   function handleStepChange(e: React.ChangeEvent<HTMLInputElement>) {
     const value = Number(e.target.value);
-    // fallback to 1 if input is empty or invalid
     if (Number.isNaN(value)) {
       setStep(1);
     } else {
